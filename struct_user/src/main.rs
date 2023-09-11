@@ -5,6 +5,10 @@ struct User {
     gender: String
 }
 
+fn user(user: User){
+    println!("The name of the user is {}", user.username)
+}
+
 fn main() {
 
     let mut user_01 = User {
@@ -18,4 +22,6 @@ fn main() {
     println!("User's email is {}", user_01.email);
     println!("User's gender is {}", user_01.gender);
     println!("Checking if user {} is active: {}", user_01.username, user_01.active);
+
+    user(user_01);
 }
