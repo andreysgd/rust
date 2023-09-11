@@ -5,8 +5,12 @@ struct User {
     gender: String
 }
 
-fn user(user: User){
+fn user(user: &User){
     println!("The name of the user is {}", user.username)
+}
+
+fn email(user: &User){
+    println!("The e-mail of the user is {}", user.email)
 }
 
 fn main() {
@@ -23,5 +27,6 @@ fn main() {
     println!("User's gender is {}", user_01.gender);
     println!("Checking if user {} is active: {}", user_01.username, user_01.active);
 
-    user(user_01);
+    user(&user_01);
+    email(&user_01);
 }
