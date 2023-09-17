@@ -7,11 +7,19 @@ struct User {
 
 impl User {
     fn users_name(&self){
-        println!("The user's name is {}", self.username);
+        println!("User's name is {}", self.username);
     }
 
     fn users_active(&self){
         println!("Confirm the user is active: {}", self.active);
+    }
+
+    fn users_email(&self){
+        println!("User's e-mail is {}", self.email);
+    }
+
+    fn users_gender(&self){
+        println!("User's gender is {}", self.gender);
     }
 }
 
@@ -24,8 +32,8 @@ fn main() {
     };
 
     user.users_name();
+    user.users_email();
+    user.users_gender();
     user.users_active();
 
-/*     println!("user.users_name");
-    println!("user.users_active"); */
 }
