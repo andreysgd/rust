@@ -1,1 +1,1 @@
-/home/andreysgd/projects/rust/implementation/target/debug/implementation: /home/andreysgd/projects/rust/implementation/src/main.rs
+/home/andreysgd/projects/rust/lanby's\ course/implementation/target/debug/implementation: /home/andreysgd/projects/rust/lanby's\ course/implementation/src/main.rs
